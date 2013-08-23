@@ -5,7 +5,14 @@
     version="0.1.0">
 
     <name>IAPPlugin</name>
-    
 
+    <license>MIT License</license>
+
+    <platform name="android">
+    	<!-- android-specific elements -->
+	</platform>
+	<platform name="ios">
+    	<!-- ios-specific elements -->
+	</platform>
 
  </plugin>
