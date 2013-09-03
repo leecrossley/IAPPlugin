@@ -8,13 +8,17 @@
 
 #import <Foundation/Foundation.h>
 #import <Cordova/CDVPlugin.h>
+#import <StoreKit/StoreKit.h>
 
-@interface InAppPurchase : CDVPlugin {
+@interface InAppPurchase : CDVPlugin <SKProductsRequestDelegate, SKPaymentTransactionObserver>
+{
         
 }
 
 @property (nonatomic, copy) NSString *callbackId;
-@property (nonatomic, retain) NSMutableArray* inAppIds;
+@property (nonatomic, retain) NSArray* inAppIds;
+@property (nonatomic, retain) NSArray* products;
+
 
 
 - (void)getInAppPurchaseDescription:(CDVInvokedUrlCommand *)command;
