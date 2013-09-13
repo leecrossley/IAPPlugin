@@ -5,14 +5,33 @@
     version="0.1.0">
 
     <name>IAPPlugin</name>
-
+    <author>Youngjoo Park</author>
+    <keywords>IAPPlugin</keywords>
     <license>MIT License</license>
-
+    
+    <asset src="www/IAPPlugin.js" target="IAPPlugin.js" />
+    
+    <js-module src="www/IAPPlugin.js" name="IAPPlugin" >
+        <clobbers target="IAPPlugin" />
+    </js-module>
+    
+    <engines>
+        <engine name="cordova" version=">=2.5.0" />
+    </engines>
+    
     <platform name="android">
     	<!-- android-specific elements -->
 	</platform>
 	<platform name="ios">
     	<!-- ios-specific elements -->
+        <config-file target="config.xml" parent="/*" >
+            <feature name="IAPPlugin" >
+                <param name="ios-package" value="">
+            </feature>
+        </config-file>
+            
+        <header-file src="" />
+        <source-file src="" />    
 	</platform>
 
  </plugin>
