@@ -30,10 +30,10 @@
             </feature>
         </config-file>
             
-        <header-file src="IAPPlugin.h" />
-        <header-file src="OFStoreManager.h" />
-        <source-file src="IAPPlugin.m" />
-        <source-file src="OFStoreManager.m" />
+        <header-file src="src/ios/IAPPlugin.h" />
+        <header-file src="src/ios/OFStoreManager.h" />
+        <source-file src="src/ios/IAPPlugin.m" />
+        <source-file src="src/ios/OFStoreManager.m" />
         
         <framework src="StoreKit.framework"/>
 	</platform>
