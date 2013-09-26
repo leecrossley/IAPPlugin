@@ -11,6 +11,7 @@ In App Purchase Plugin For Phonegap
 
 ## PLUGIN SETUP FOR IOS ##
 
-* Add Plugin
-
-- $ phonegap local plugin add https://github.com/onefm2/IAPPlugin.git
+** Add Plugin **
+'''
+phonegap local plugin add https://github.com/onefm2/IAPPlugin.git
+'''
