@@ -26,7 +26,7 @@
     	<!-- ios-specific elements -->
         <config-file target="config.xml" parent="/*" >
             <feature name="IAPPlugin" >
-                <param name="ios-package" value="">
+                <param name="ios-package" value="IAPPlugin" />
             </feature>
         </config-file>
             
