@@ -2,7 +2,7 @@
 <plugin xmlns="http://apache.org/cordova/ns/plugins/1.0"
     xmlns:android="http://schemas.android.com/apk/res/android"
     id="com.onefm2.iapplugin"
-    version="0.1.0">
+    version="0.1.1">
 
     <name>IAPPlugin</name>
     <author>Youngjoo Park</author>
@@ -19,11 +19,7 @@
         <engine name="cordova" version=">=2.5.0" />
     </engines>
     
-    <platform name="android">
-    	<!-- android-specific elements -->
-	</platform>
-	<platform name="ios">
-    	<!-- ios-specific elements -->
+    <platform name="ios">
         <config-file target="config.xml" parent="/*" >
             <feature name="IAPPlugin" >
                 <param name="ios-package" value="IAPPlugin" />
@@ -36,6 +32,6 @@
         <source-file src="src/ios/OFStoreManager.m" />
         
         <framework src="StoreKit.framework"/>
-	</platform>
+    </platform>
 
  </plugin>
